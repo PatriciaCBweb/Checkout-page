@@ -1,0 +1,285 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #4E5150;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.container{
+    min-width: 195px;
+    padding: 13px;
+}
+
+h1{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#buy{
+    background-color: #f2f2f2;
+    padding: 30px 30px 10px 30px;
+    border-radius: 12px;
+    margin-bottom: 39px;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.product img{
+    border-radius: 12px;
+    width: 30%;
+    min-width: 115px;
+    min-height: 115px;
+    margin-right: 20px;
+}
+
+.info-product{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-product h3{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.prizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.prize{
+    font-size: 14px;
+    margin-right: 15px;
+    color: #F2994A;
+}
+
+.old-prize{
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.quantity{
+    width: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 14px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+}
+
+.quantity p{
+    font-size: 16px;
+}
+
+.quantity button{
+    padding: 0 5px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.shipping{
+    margin-top: 85px;
+}
+
+.shipping-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    padding: 10px 0;
+}
+
+.shipping h4, .shipping p{
+   font-size: 14px;
+}
+
+.title-info{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+}
+
+.input-group label{
+    font-size: 10px;
+}
+
+.input-box{
+    max-width: 465px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    border: 1px solid #828282;
+    padding: 10px 0 10px 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.material-icons{
+    color: #828282;
+    font-size: 18px !important;
+    margin-right: 5px;
+}
+
+.input-box input{
+    border: none;
+    color: #828282;
+    font-size: 11px;    
+}
+
+.info-address{
+    margin-top: 45px;
+}
+
+#name{
+    color: #333;
+}
+
+.input-box select{
+    border: none;
+    font-size: 11px;
+    color: #828282;
+}
+
+.country-code{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.checkbox p{
+    margin-left: 7px;
+    margin-bottom: 16px;
+}
+
+.button{
+    border-radius: 12px;
+    border: none;
+    background-color: #F2994A;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 16px;
+    float: right;
+}
+
+/* footer */
+footer p{
+    margin-top: 90px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #A9A9A9;
+
+}
+
+footer a{
+    color: #A9A9A9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (min-width: 1000px){
+    .container{
+        max-width: 890px;
+        margin: auto;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: 36px;
+        margin: 50px 0;
+    }
+
+    #buy{
+        max-width: 323px;
+        background-color: #f2f2f2;
+        padding-bottom: 5px;
+        margin-bottom: 250px;
+    }
+
+    .info-product h3{
+        font-size: 16px;
+    }
+    
+    .prize{
+        font-size: 16px;
+    }
+    
+    .old-prize{
+        font-size: 12px;
+    }
+
+    .quantity{
+        width: 100px;
+        padding: 12px;
+    }
+    
+    .quantity p{
+        font-size: 16px;
+    }
+
+    .shipping{
+        margin-top: 85px;
+    }
+
+    .shipping h4, .shipping p{
+        font-size: 18px;
+     }
+
+    .title-info{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .input-group label{
+        font-size: 12px;
+    }
+
+    .input-box{
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .input-box input{
+        font-size: 16px;
+    }
+
+    .input-box select{
+        font-size: 16px;
+    }
+
+    .checkbox{
+        font-size: 12px;
+    }
+}

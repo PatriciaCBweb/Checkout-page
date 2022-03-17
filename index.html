@@ -7,15 +7,138 @@
     <title>Checkout</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 </head>
 <body>
-    
-    <footer>
-        <p>Created by <a href="https://github.com/PatriciaCBweb">PatriciaCB</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
-    </footer>
+    <div class="container">
+<!-- main -->
+        <main>
+            <h1>Checkout</h1>
+            <div class="main">
+                <div id="buy">
+                    <div class="product">
+                        <img src="assets/images/photo1.png" alt="Vintage Backbag">
+                        <div class="info-product">
+                            <h3>Vintage Backbag</h3>
+                            <div class="prizes">
+                                <p class="prize">$54.99</p>
+                                <p class="old-prize">$94.99</p>
+                            </div>
+                            <div class="quantity">
+                                <button class="minus">-</button>
+                                <p class="number">1</p>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="assets/images/photo2.png" alt="Levi Shoes">
+                        <div class="info-product">
+                            <h3>Levi Shoes</h3>
+                            <div class="prizes">
+                                <p class="prize">$74.99</p>
+                                <p class="old-prize">$124.99</p>
+                            </div>
+                            <div class="quantity">
+                                <button class="minus">-</button>
+                                <p class="number">1</p>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping">
+                        <div class="shipping-group">
+                            <h4>Shipping</h4>
+                            <p>$19</p>
+                        </div>
+                        <div class="shipping-group">
+                            <h4>Total</h4>
+                            <p>$148.98</p>
+                        </div>
+                    </div>
+                </div>
+                <form action=""  id="info">
+                    <div class="info-contact">
+                        <h2 class="title-info">Contact information</h2>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <div class="input-box">
+                                <i class="material-icons">email</i>
+                                <input type="email" id="email" placeholder="Enter your email..">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone</label>
+                            <div class="input-box">
+                                <i class="material-icons">phone</i>
+                                <input type="number" id="phone" placeholder="Enter your phone..">
+                            <div> 
+                        </div>
+                    </div>
+                    <div class="info-address">
+                        <h2 class="title-info">Shipping address</h2>
+                        <div class="input-group">
+                            <label for="name">Full name</label>
+                            <div class="input-box">
+                                <i class="material-icons">	account_circle</i>
+                                <input type="text" id="name" value="Rodney Cotton">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="adress">Adress</label>
+                            <div class="input-box">
+                                <i class="material-icons">home</i>
+                                <input type="text" id="adress" placeholder="Your adress..">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="city">City</label>
+                            <div class="input-box">
+                                <i class="material-icons">	location_city</i>
+                                <input type="text" id="city" placeholder="Your city..">
+                            </div>
+                        </div>
+                        <div class="country-code">
+                            <div class="input-group">
+                                <label for="country">Country</label>
+                                <div class="input-box">
+                                    <i class="material-icons">	location_city</i>
+                                    <select name="country" id="country"><i class="material-icons">keyboard_arrow_down</i>
+                                        <option value="">Your country..</option>
+                                        <option value="">country1</option>
+                                        <option value="">country2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="postcode">Post code</label>
+                                <div class="input-box">
+                                    <i class="material-icons">markunread_mailbox	
+                                    </i>
+                                    <input type="text" id="postcode" placeholder="Your postal code.." pattern="[0-9]{5}" title="five number postal code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name=""><p>Save this information for next time</p>
+                    </div>
+                    <button type="submit" class="button">Continue</button>
+                </form>
+            </div>
+        </main>
+<!-- footer -->
+        <footer>
+            <p>Created by <a href="https://github.com/PatriciaCBweb">PatriciaCB</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
+        </footer>
+    </div>
 </body>
 </html>
