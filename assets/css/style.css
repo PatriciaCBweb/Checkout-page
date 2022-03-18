@@ -6,9 +6,15 @@
     box-sizing: content-box;
 }
 
+/*///////////////////////////////
+/////////////MOBILE//////////////
+///////////////////////////////*/
+
 .container{
     min-width: 195px;
+    max-width: 480px;
     padding: 13px;
+    margin: auto;
 }
 
 h1{
@@ -21,6 +27,7 @@ h1{
     padding: 30px 30px 10px 30px;
     border-radius: 12px;
     margin-bottom: 39px;
+    max-width: 410px;
 }
 
 .product{
@@ -87,6 +94,11 @@ h1{
     border-radius: 4px;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.quantity button:active{
+    background-color: #A9A9A9;
 }
 
 .shipping{
@@ -157,11 +169,18 @@ h1{
     border: none;
     font-size: 11px;
     color: #828282;
+    appearance: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: calc(100% - 0px) center;
+    padding-right:20%;
 }
 
 .country-code{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
 }
 
 .checkbox{
@@ -184,6 +203,11 @@ h1{
     color: #fff;
     font-size: 16px;
     float: right;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #db8133;
 }
 
 /* footer */
@@ -195,7 +219,6 @@ footer p{
     font-weight: 500;
     font-size: 12px;
     color: #A9A9A9;
-
 }
 
 footer a{
@@ -204,7 +227,30 @@ footer a{
     font-weight: 700;
 }
 
-@media (min-width: 1000px){
+/*///////////////////////////////
+/////////////TABLET//////////////
+///////////////////////////////*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    h1{
+        font-size: 30px;
+        margin: 35px 0;
+    }
+    
+    .country-code{
+        grid-gap: 2em;
+    }
+
+    .input-box select{
+        padding-right:90px;
+    }
+}
+
+/*///////////////////////////////
+/////////////DESKTOP/////////////
+///////////////////////////////*/
+
+@media (min-width: 1024px){
     .container{
         max-width: 890px;
         margin: auto;
@@ -281,5 +327,10 @@ footer a{
 
     .checkbox{
         font-size: 12px;
+    }
+
+    footer p{
+        margin-top: 159px;
+        font-size: 14px;
     }
 }
